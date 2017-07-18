@@ -30,7 +30,6 @@ gem 'sidekiq-throttler'
 gem 'redis', '~> 3.2'
 
 gem 'config'
-gem 'interactor'
 
 # Frontend
 gem 'active_link_to'
@@ -60,6 +59,15 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'awesome_print'
+end
+
+group :test do
+  gem 'rspec-rails', '~> 3.6'
+  gem 'factory_girl_rails'
+  gem 'parallel_tests'
+  gem 'faker'
+  gem 'vcr'
+  gem 'webmock'
 end
 
 group :production do

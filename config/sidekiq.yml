@@ -1,9 +1,6 @@
 ---
 :concurrency: 10
 :queues:
-  - [services, 1]
-  - [notifications, 1]
   - [default, 1]
-  - [tokens, 2]
-  - [charge_checking, 2]
   - [mailers, 2]
+  - [tracking_events, 2]
