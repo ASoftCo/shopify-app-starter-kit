@@ -1,0 +1,69 @@
+inherit_from: .rubocop_todo.yml
+
+AllCops:
+  Exclude:
+    - 'vendor/**/*'
+    - 'test/fixtures/**/*'
+    - 'db/**/*'
+    - 'bin/**/*'
+    - 'log/**/*'
+    - 'tmp/**/*'
+
+Lint/EndAlignment:
+  EnforcedStyleAlignWith: variable
+
+Lint/UnusedMethodArgument:
+  Enabled: false
+
+Layout/AccessModifierIndentation:
+  EnforcedStyle: outdent
+
+Layout/AlignArray:
+  Enabled: false
+
+Layout/AlignParameters:
+  EnforcedStyle: with_fixed_indentation
+
+Style/BracesAroundHashParameters:
+  Enabled: false
+
+Layout/CaseIndentation:
+  EnforcedStyle: end
+
+# This is disabled because it wants parens to look like this:
+#
+#   campaign = Fabricate(:campaign,
+#     name: "Foo"
+#                       )
+# Yuck.
+Layout/ClosingParenthesisIndentation:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Layout/DotPosition:
+  EnforcedStyle: trailing
+
+Layout/IndentHash:
+  EnforcedStyle: consistent
+
+Style/IfUnlessModifier:
+  Enabled: false
+
+Layout/MultilineOperationIndentation:
+  EnforcedStyle: indented
+
+# This would forbid appending `rescue nil`
+Style/RescueModifier:
+  Enabled: false
+
+# This is the rule that enforces single quotes.
+Style/StringLiterals:
+  Enabled: false
+
+Style/WordArray:
+  Enabled: false
+
+Metrics/ModuleLength:
+  Max: 250

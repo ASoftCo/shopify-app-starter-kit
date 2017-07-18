@@ -1,0 +1,6 @@
+shopify_app:
+  name: "My Shopify App"
+  scopes:
+    - "some_scope"
+  webhooks:
+    - "some_webhook"

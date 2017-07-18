@@ -1,0 +1,15 @@
+before_script:
+  - sudo apt-get update -qq && sudo apt-get install -y -qq sqlite3 libsqlite3-dev
+  - rbenv install --skip-existing `cat .ruby-version`
+  - rbenv global `cat .ruby-version`
+  - rbenv rehash
+  - gem install bundler --no-ri --no-rdoc
+  - bundle install --jobs $(nproc)  "${FLAGS[@]}"
+
+test:
+  script:
+    - sudo bin/rails test
+
+rubocop:
+  script:
+    - bundle exec rubocop

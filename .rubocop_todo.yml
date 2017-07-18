@@ -1,0 +1,30 @@
+# Configuration parameters: CountComments.
+Metrics/ClassLength:
+  Max: 200
+
+Metrics/ModuleLength:
+  Max: 200
+
+Metrics/LineLength:
+  Max: 90
+  Exclude:
+    - 'test/test_helper.rb'
+    - 'config/puma.rb'
+    - 'config/initializers/config.rb'
+    - 'config/initializers/assets.rb'
+    - 'config/initializers/backtrace_silencers.rb'
+    - 'config/initializers/wrap_parameters.rb'
+    - 'config/initializers/devise.rb'
+    - 'config/application.rb'
+    - 'config/environments/*'
+    - 'Rakefile'
+
+Style/ClassAndModuleChildren:
+  Exclude:
+    - 'test/test_helper.rb'
+
+Bundler/OrderedGems:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
