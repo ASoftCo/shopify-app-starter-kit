@@ -1,11 +1,11 @@
-# Shopify App Skeleton
+# Shopify App Starter Kit
 
-The skeleton for quick starting developing shopify app.
+The Rails app with appropriate tools for quick starting developing shopify app.
 
 **How to install?**
 
-1. `git clone git@gitlab.asoft.co:asoft/shopify/apps/shopify-app-skeleton.git`
-2. `cd shopify-skeleton`
+1. Clone the repo.
+2. `cd shopify-app-starter-kit`
 3. `git remote set-url origin new_git_repo_url`
 4. `bundle install && bundle exec rake db:migrate`
 5. Rename the app module in the `config/application.rb` file

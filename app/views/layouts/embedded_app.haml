@@ -11,9 +11,7 @@
     .app-wrapper
       .app-content
         %main{:role => "main"}
-          = render "shared/menu"
           = yield
-          = render "shared/footer"
 
     = render 'layouts/flash_messages'
 
