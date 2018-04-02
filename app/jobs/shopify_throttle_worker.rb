@@ -9,8 +9,7 @@ class ShopifyThrottleWorker
 
   EXCEPTIONS = [
     ActiveResource::UnauthorizedAccess,
-    ActiveResource::ForbiddenAccess,
-    ActiveResource::ClientError
+    ActiveResource::ForbiddenAccess
   ].freeze
 
   sidekiq_options throttle: {
