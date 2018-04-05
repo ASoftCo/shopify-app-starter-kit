@@ -22,7 +22,6 @@ gem 'rest-client'
 
 # Shopify
 gem 'shopify_app'
-gem 'activeresource', github: 'rails/activeresource'
 
 # Queuing
 gem 'sidekiq'
