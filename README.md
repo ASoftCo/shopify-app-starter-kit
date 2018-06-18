@@ -16,9 +16,9 @@ The Rails app with appropriate tools for quick starting developing shopify app.
 10. Add `SHOPIFY_API_KEY` and `SHOPIFY_SECRET` to `.env` and `.env.production` files.
 11. Change `REDIS_QUEUE_URI` in the `.env` and `.env.production` files if it's necessary
 12. Change an application name in the `config/settings.yml` file.
-13. Change an application host name in the `config/settings/*.rb` files.
-14. Add [necessary shopify scopes](https://help.shopify.com/api/getting-started/authentication/oauth#scopes) to the `config/settings.rb` file (e.g. `read_products, read_orders`)
-15. Add [necessary shopify webhooks](https://help.shopify.com/api/reference/webhook) to the `config/settings.rb` file.
+13. Change an application host name in the `config/settings/*.yml` files.
+14. Add [necessary shopify scopes](https://help.shopify.com/api/getting-started/authentication/oauth#scopes) to the `config/settings.yml` file (e.g. `read_products, read_orders`)
+15. Add [necessary shopify webhooks](https://help.shopify.com/api/reference/webhook) to the `config/settings.yml` file.
 16. Add necessary workers to the `app/jobs/` directory (e.g. if you add `orders/create` webhook, you should create `orders_create_job.rb` worker)
 17. For UI and CSS styles read about [Polaris](https://polaris.shopify.com/) or [Uptown CSS](http://www.uptowncss.com/)
 
