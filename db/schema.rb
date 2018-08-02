@@ -10,7 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170718125423) do
+ActiveRecord::Schema.define(version: 2017_07_18_125423) do
+
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
 
   create_table "shops", force: :cascade do |t|
     t.string "shopify_domain", null: false

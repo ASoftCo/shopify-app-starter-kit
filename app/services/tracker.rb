@@ -1,5 +1,7 @@
 class Tracker
-  @tracker = Mixpanel::Tracker.new(ENV["MIXPANEL_TOKEN"])
+  @tracker = Mixpanel::Tracker.new(
+    Rails.application.credentials[Rails.env.to_sym][:mixpanel_token]
+  )
 
   class << self
     attr_accessor :tracker
