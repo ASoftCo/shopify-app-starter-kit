@@ -8,7 +8,7 @@ end
 ruby "2.5.1"
 
 # Backend
-gem 'rails', '5.2.0'
+gem 'rails', '5.2.1'
 gem 'puma', '~> 3.0'
 gem 'redis', '~> 4.0'
 gem 'rest-client'
@@ -20,7 +20,7 @@ gem 'mini_magick', '~> 4.8'
 gem 'bootsnap', '>= 1.1.0', require: false
 
 # Shopify
-gem 'shopify_app', '8.2.6'
+gem 'shopify_app', '8.3.1'
 
 # Backround processing
 gem 'sidekiq'
