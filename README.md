@@ -11,11 +11,11 @@ The Rails app with appropriate tools for quick starting developing shopify app.
 5. Install and run [Redis](https://redis.io/download)
 6. Rename the app module in the `config/application.rb` file
 7. Install [ngrok](https://ngrok.com/)
-8. Create a new app in your [shopify partner account](partners.shopify.com)
-  - use ngrok url as a `App URL` in the `App setup` section
-  - add `whitelisted redirection URL(s)`:
-    http://<your_ngrok_host>/auth/shopify/callback
-    http://<your_ngrok_host>/auth/shopify/callback
+8. Create a new app in your [shopify partner account](https://partners.shopify.com/organizations)  
+  - use ngrok url as a `App URL` in the `App setup` section  
+  - add `whitelisted redirection URL(s)`:  
+    http://<your_ngrok_host>/auth/shopify/callback  
+    https://<your_ngrok_host>/auth/shopify/callback  
 9. `rails credentials:edit` and add all settings from `config/credentials_sample.yml`
 10. Change all credential values in your `config/credentials.yml.enc` file to appropriate ones.
   - change `api_key` and `secret` (can be found at the `App setup` section)
