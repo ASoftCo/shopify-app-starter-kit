@@ -8,6 +8,8 @@ ShopifyApp.configure do |config|
   config.embedded_app = true
   config.after_authenticate_job = false
 
+  config.api_version = '2019-04'
+
   topics = Rails.application.credentials.shopify_app[:webhook_topics]
   config.webhooks = topics.each_with_object([]) do |topic, acc|
     acc << {
